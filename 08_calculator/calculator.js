@@ -18,8 +18,13 @@ const power = function(base, exp) {
 	return base ** exp;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	if(num === 0 || num === 1) return 1;
+  let total = 1;
+  for(let i = num; i > 1; i--) {
+    total *= i;
+  }
+  return total;
 };
 
 // Do not edit below this line
