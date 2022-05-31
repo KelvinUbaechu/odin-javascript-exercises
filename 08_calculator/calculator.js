@@ -14,8 +14,8 @@ const multiply = function(nums) {
   return nums.reduce((num1, num2) => num1 * num2);
 };
 
-const power = function() {
-	
+const power = function(base, exp) {
+	return base ** exp;
 };
 
 const factorial = function() {
