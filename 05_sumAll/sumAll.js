@@ -10,6 +10,9 @@ const sumAll = function(num1, num2) {
         start = num2;
         end = num1;
     }
+    if(start < 0) {
+        return 'ERROR';
+    }
     let sum = 0;
     for(let i = start; i <= end; i++) {
         sum += i;
