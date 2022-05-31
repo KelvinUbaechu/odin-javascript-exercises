@@ -1,6 +1,6 @@
 const palindromes = function (string) {
-    let alphaChars = string.split('').filter((c) => {
-        return c !== ' ' && c.toUpperCase() !== c.toLowerCase();
+    let alphaChars = string.toLowerCase().split('').filter((c) => {
+        return c !== ' ' && c !== c.toUpperCase();
     });
     let midIdx = Math.floor(alphaChars.length / 2);
     let endIdx = alphaChars.length - 1;
